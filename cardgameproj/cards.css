@@ -91,9 +91,8 @@ body {
   font-size: 16px;
 }
 
-/*
-.other-form {
 
- insert code here for other form 
+.other-form {
+ text-align:right;
+ justify-content: space-between;
 }
-*/
