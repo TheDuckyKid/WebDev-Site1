@@ -90,3 +90,13 @@ body {
   margin-right: 4px;
   font-size: 16px;
 }
+
+.alt-type-stats{
+  align-items: center;
+  text-align: center;
+}
+
+.alt-type-stats div{
+  align-items: center;
+  text-align: center;
+}
