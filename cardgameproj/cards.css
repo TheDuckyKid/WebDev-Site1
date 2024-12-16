@@ -1,102 +1,118 @@
+/* ===== General Page Styling ===== */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #111; /* Page background color */
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  color: #fff; /* Default text color */
 }
 
+/* ===== Card Container ===== */
 .card {
-  width: 300px;
-  border: 2px solid #333;
-  border-radius: 16px;
-  padding: 16px;
-  box-sizing: border-box;
-  background-color: #fff;
-}
-
-.card-header {
+  width: 320px;
+  height: 600px;
+  border: 2px solid #fff; /* Card border color */
+  border-radius: 16px; /* Rounded corners for the card */
+  background-color: #111; /* Card background color */
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.card-header div {
-  padding: 4px 8px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
+/* ===== Name Section ===== */
 .name-container {
-  width: 100%;
   margin-bottom: 8px;
 }
 
 .name-box {
-  padding: 4px;
-  border: 1px solid #333;
+  border: 2px solid #fff; /* Border color for name box */
+  background-color: #222; /* Background color for name box */
   border-radius: 8px;
+  padding: 6px 12px;
   font-size: 14px;
-  font-weight: bold;
 }
 
-.card-content {
-  height: 120px;
-  margin-bottom: 16px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  overflow: hidden;
+/* ===== Leadership and Attack Style ===== */
+.leadership-container,
+.attackstyle-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 4px;
 }
 
-.card-content img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.leadership, .attackstyle {
+  border: 2px solid #fff; /* Border color */
+  background-color: #222; /* Background color */
   border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  width: fit-content;
 }
 
-.card-stats {
+.attackstyle-container {
+  justify-content: flex-end; /* Align attackstyle on the right */
+}
+
+/* ===== Content Area ===== */
+.content-area {
+  flex: 1;
+  border: 2px solid #fff; /* Border color */
+  background-color: #111; /* Background color */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* ===== Stats Section ===== */
+.stats {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
-.card-stats div {
+.stats div {
   display: flex;
   align-items: center;
+  border: 4px solid #871212; /* Border color */
+  background-color: #222; /* Background color */
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* ===== Special Ability Section ===== */
+.ability {
+  border: 2px solid #fff; /* Border color */
+  background-color: #222; /* Background color */
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* ===== Alt Mode Section ===== */
+.alt-mode {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.alt-mode-label {
+  border: 2px solid #fff; /* Border color */
+  background-color: #333; /* Background color */
+  border-radius: 8px;
   padding: 4px 8px;
-  border: 1px solid #333;
+  font-size: 10px;
+}
+
+.alt-box {
+  border: 2px solid #fff; /* Border color */
+  background-color: #444; /* Background color */
   border-radius: 8px;
-  font-size: 14px;
-}
-
-.card-ability {
-  padding: 8px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.icon {
-  margin-right: 4px;
-  font-size: 16px;
-}
-
-.alt-type-stats{
-  align-items: center;
-  text-align: center;
-}
-
-.alt-type-stats div{
-  align-items: center;
-  text-align: center;
+  padding: 4px 8px;
+  font-size: 12px;
 }
